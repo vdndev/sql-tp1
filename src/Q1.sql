@@ -19,7 +19,7 @@ INSERT INTO utilisateur(login_util, mot_pass_util, id_droit) VALUES
 
 INSERT INTO fournisseur(nom_fourn, tel_fourn, adr_num_fourn, adr_rue_fourn, adr_cp_fourn, adr_ville_fourn, adr_pays_fourn) VALUES
 ('Biocer', '0232678131', 240, 'chemin de la fôret', '27180', 'Le Plessis-Grohan', 'France'),
-('Lactel', '02.43.59.42.59', 10, 'rue Adolphe Beck', '53089', 'Laval', 'France');
+('Lactel', '0243594259', 10, 'rue Adolphe Beck', '53089', 'Laval', 'France');
 
 INSERT INTO matprem(nom_mat, prix_achat, qte_stk) VALUES
 ('Farine T80', 0.90, 2000),
