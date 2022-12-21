@@ -26,7 +26,8 @@ INSERT INTO matprem(nom_mat, prix_achat, qte_stk) VALUES
 ('Farine T100', 0.70, 2500),
 ('Lait', 0.25, 200),
 ('Beurre', 2.10, 400),
-('Barre Chocolat', 0.30, 800);
+('Barre Chocolat', 0.30, 800),
+('Sucre', 0.25, 1200);
 
 INSERT INTO produitfinis(nom_pf, prix_vente_pf, qte_stk, id_type_pf) VALUES
 ('Baguette', 0.90, 60, 1),
@@ -40,7 +41,7 @@ INSERT INTO commerciaux(nom_com, prenom_com, tel_com) VALUES
 ('Dupont', 'Gerard', '0011223344'),
 ('Durand', 'Patrick', '9988776655');
 
-INSERT INTO client(nom_cli, tel_cli, adr_num_cli, adr_rue_cli, adr_cp_cli, adr_ville_cli, adr_pays_cli) VALUES
+INSERT INTO clients(nom_cli, tel_cli, adr_num_cli, adr_rue_cli, adr_cp_cli, adr_ville_cli, adr_pays_cli) VALUES
 ('E.Leclerc', '0562615610', 0, 'Lieu Dit Clarac', '32000', 'Auch', 'France');
 
 INSERT INTO acheter(id_fourn, id_matprem) VALUES

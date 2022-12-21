@@ -39,9 +39,9 @@ prix_achat FLOAT NOT NULL,
 qte_stk FLOAT NOT NULL
 )Engine=InnoDB;
 
-CREATE TABLE client(
+CREATE TABLE clients(
 id_client INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-nom_cli VARCHAR(50) UNIQUE NOT NULL,
+nom_cli VARCHAR(50) NOT NULL,
 tel_cli VARCHAR(10) NOT NULL,
 adr_num_cli INT NOT NULL,
 adr_rue_cli VARCHAR(50) NOT NULL,
@@ -137,15 +137,15 @@ ALTER TABLE vendre
   FOREIGN KEY(id_pf)
   REFERENCES produitfinis(id_pf);
 ALTER TABLE vendre
-  ADD CONSTRAINT fk_vendre_client
+  ADD CONSTRAINT fk_vendre_clients
   FOREIGN KEY(id_client)
-  REFERENCES client(id_client);
+  REFERENCES clients(id_client);
   
 -- fideliser
 ALTER TABLE fideliser
-  ADD CONSTRAINT fk_fideliser_client
+  ADD CONSTRAINT fk_fideliser_clients
   FOREIGN KEY(id_client)
-  REFERENCES client(id_client);
+  REFERENCES clients(id_client);
 ALTER TABLE fideliser
   ADD CONSTRAINT fk_fideliser_commerciaux
   FOREIGN KEY(id_com)
